@@ -57,7 +57,7 @@
     <iframe
     width="560"
     height="315"
-    src="https://www.youtube.com/embed/PLACEHOLDER"
+    src="https://www.youtube.com/embed/LFUDtT6k_nU"
     allowfullscreen>
     </iframe> <!--Konu ile alakalı yerine buraya projenin hazır olduğu halindeki videoyu koymak istedim, çünkü dürüst olursam konu ile alakalı video bulamadım.-->
     <h2 class="m-sayfa-baslik">Konum</h2>
