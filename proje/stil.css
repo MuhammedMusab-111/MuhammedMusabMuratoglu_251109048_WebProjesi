@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #191970;
+}
+
+.m-ust-menu {
+    background-color: #0f0f3d;
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.m-ust-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.m-ust-menu a:hover {
+    color: #00bfff;
+}
+
+.m-kapak-yazi {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    color: white;
+    font-size: 40px;
+    z-index: 2;
+}
+
+.m-haber-sayfa {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.m-haber-kart {
+    background-color: rgba(0,0,0,0.75);
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+}
+
+.m-sayfa-baslik {
+    color: white;
+    margin: 20px;
+}
+
+.m-haber-tablosu {
+    width: 700px;
+    border-collapse: collapse;
+}
+
+/*haber tablosunun şeklini değiştirdiğimden dolayı siyah rengi kullanılmıyor, ama şekli aynı kalsaydı üstte siyah olacaktı.*/
+.m-haber-tablosu th {
+    color: white;
+    padding: 10px;
+}
+
+.m-haber-tablosu tr:nth-child(even) td {
+    background-color: #6453fa;
+}
+
+.m-haber-tablosu tr:nth-child(odd) td {
+    background-color: #282072;
+}
+
+.m-login-form {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.m-login-form input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.m-login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #191970;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/*Giriş kısmı için ortalamak daha iyi bir seçenekmiş gibime geldi, bu nedenle ortaya koydum*/
+.m-login-form h2 {
+    text-align: center;
+}
+
+.m-admin-kutusu {
+    width: 600px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.m-form-kutu {
+    background-color: white;
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.m-form-kutu input,
+.m-form-kutu select,
+.m-form-kutu textarea {
+    width: 100%;
+    padding: 8px;
+}
+
+.m-iletisim-form-disari {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.m-iletisim-formu {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+}
+
+.m-anasayfa-orta {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.m-anasayfa-baslik {
+    color: white;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.m-menu-grid {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-gap: 15px;
+}
+
+.m-kutu {
+    background-color: #0f0f3d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.m-kutu:hover {
+    background-color: #00bfff;
+}
+
+.m-admin-kutu-btn {
+    grid-column: span 2;
+    background-color: #2b2b2b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.m-admin-kutu-btn:hover {
+    background-color: rgb(220, 20, 60);
+}
+
+/*burada ana sayfayı ortaladım çünkü butonların ekranın ortasında durmasını güzel görünür gibi geldi*/
+.m-anasayfa-orta {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/*resmi herşeyin arkasında durmasını istediğimden dolayı bu şekil ayarladım*/
+.m-arka-resim {
+    position: absolute;
+    width: 900px;
+    height: 550px;
+    background-image: url("resim/resim.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.m-anasayfa-baslik,
+.m-menu-grid {
+    position: relative;
+    z-index: 2;
+}
+
+.m-mesaj-alan {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.m-mesaj-alan textarea {
+    width: 100%;
+}
+
+/*genel olarak bazı kısımlar normalden daha ilerde (mesela ana sayfa ile alakalı şeyler sonlarda) çünkü önce ayarlayığ sonra geri döndüm. Bu yüzden eğer kullanılmayan*/
+/*bazi şeyler varsa, değiştirdiğimde silmeyi unutmuş olabilirim.*/
