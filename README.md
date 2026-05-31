@@ -24,6 +24,8 @@ Teknoloji Haber Sitesi projesi
 
 6. Tarayıcıda açın:
    http://localhost/proje/index.php
+   "proje" adında database yaratın
+   importa basıl proje.sql'i seçin
 
    ## Özellikler
 - Haber listeleme
